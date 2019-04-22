@@ -1,0 +1,45 @@
+	
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" width="device-width", initial-scale="1">
+	<title>Portfolio</title>
+	<link rel='stylesheet' href='{% static "styles.css" %}'>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700" rel="stylesheet">
+</head>
+<body>
+	<div id="main-project">
+		<header class="wrapper">
+			<h1><a href="{% url 'home' %}"><img src="{% static 'logo1.png' %}" /></a></h1>
+			<nav>
+				<ul>
+					<li><a href="{% url 'about' %}">about</a></li>
+					<li><a href="{% url 'article:list' %}">blog</a></li>
+					<li><a href="{% url 'portfolio:list' %}">portfolio</a></li>
+					<li><a href="{% static 'cv.pdf' %}" download="Yushkova_CV" class="highlight">get CV</a></li>
+
+				</ul>
+			</nav>
+		</header>
+		<div class="project-main">
+			<h1 class="project-list">Project <span>List</span></h1>
+			<div class="list-whole">
+				{% for project in project %}
+				<div class="list-item">	
+					<h3 id="project-title"><a href="{{project.slug}}">{{ project.title }}</a></h3>
+					<img class="thumb-img" src="{{ project.thumb.url }}" />
+					<p>{{ project.snippet }}</p>
+					<p>{{ project.date }}</p>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</body>
+	</html>

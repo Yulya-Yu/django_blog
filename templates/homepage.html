@@ -1,0 +1,48 @@
+	
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" width="device-width", initial-scale="1">
+	<title>Yushkova</title>
+	<link rel='stylesheet' href='{% static "styles.css" %}'>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+</head>
+<body>
+	<div id="main">
+		<header class="wrapper">
+			<h1><a href="{% url 'home' %}"><img src="{% static 'logo1.png' %}" /></a></h1>
+			<nav>
+				<ul>
+					<li><a href="{% url 'about' %}">about</a></li>
+					<li><a href="{% url 'article:list' %}">blog</a></li>
+					<li><a href="{% url 'portfolio:list' %}">portfolio</a></li>
+					<li><a href="{% static 'cv.pdf' %}" download="Yushkova_CV" class="highlight">get CV</a></li>
+
+				</ul>
+			</nav>
+		</header>
+
+		<div class="main-header">
+			<h1>Yuliya Yushkova</h1>
+			<p class="main-text">front-end <span>developer</span></p>
+			
+			<a href="https://www.linkedin.com/in/yuliya-yushkova/" target="_blank"><img src="{% static 'linkedin.svg' %}" class="icon"></a>
+			<a href="mailto:kuroi.kasa1509@gmail.com" class="email-link" target="_blank"><img src="{% static 'gmail.svg' %}" class="icon"></a>
+			<a href=""><img src="{% static 'telegram.svg' %}" class="icon"></a>
+			<a href="https://github.com/Yulya-Yu" target="_blank"><img src="{% static 'git.svg' %}" class="icon"></a>
+		</div>
+		<div class="copyright">© 2019. All Rights Reserved <span>yushkovayu.com</span></div>  
+	</div>
+<script src="/static/p5.min.js"></script>
+<script src="/static/vanta.trunk.min.js"></script>
+<script>
+VANTA.TRUNK('#main)';
+</script>
+</body>
+</html>

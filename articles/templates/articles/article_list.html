@@ -1,0 +1,33 @@
+{% extends 'base_layout.html' %}
+
+
+{% block content %}
+<h1>Hi and welcome</h1>
+<p>My name is Yuliya and this is my blog about learning programming and other stuff. I've always wanted to know everything and while knowing absolutely everithing there is to know is not possible, it is absolutely possible to learn A LOT, to self improve and to try new things. This is kinda what I'm doing. And this blog is meant to document my path.</p>
+<p>Learn a little more about this project <a>here</a> or a lot more by contacting me directly: kuroi.kasa1509@gmail.com</p>
+<section class="info">
+ <div class="column-1">
+  <h4>WHO AM I</h4>
+  <p>I'm a Front-End developer wannabe. I started as self taught programmer and than received Front-End developer Scholarship from Google. I work with HTML, CSS, JS and React, however, this blog is my experiment with Python and Django. I went the long way, but there is still so much to learn!</p>
+</div>
+<div class="column-2">
+  <h4>BLOG'S PURPOSE</h4>
+  <p>The purpose of this blog is to document my progress and motivate me to keep going. Sometimes it is hard to find that motivation. Sometimes the amount of information about one technology or the other seems SO overwhelming!  </p>
+</div>
+<div class="column-3">
+  <h4>RECENT BOOKS AND INTERESTING ARTICLES</h4>
+  <p></p>
+</div>
+</section>
+<h1 class="article-list">Article List</h1>
+<div class="articles">
+ {% for article in articles %}
+ <div class="article">
+  <h2><a href="{% url 'article:detail' slug=article.slug %}">{{ article.title}}</a></h2>
+  <p>{{ article.snippet }}</p>
+  <p>{{ article.date }}</p>
+  <p class="author">added by {{ article.author.username }}</p>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

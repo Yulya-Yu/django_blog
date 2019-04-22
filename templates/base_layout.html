@@ -1,0 +1,59 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" width="device-width", initial-scale="1">
+	<title>Articles</title>
+	<link rel='stylesheet' href='{% static "styles.css" %}'>
+	<link rel="stylesheet"  src="{% static 'p5.min.js' %}"></script>
+	<link rel="stylesheet"  src="{% static 'vanta.trunk.min.js' %}"></script>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+</head>
+<body>
+	<section class="main-content">
+		<header class="wrapper">
+			<h1><a href="{% url 'home' %}"><img src="{% static 'logo.png' %}" /></a></h1>
+			<nav>
+				<ul>
+					<li><a href="{% url 'about' %}">About</a></li>
+					<li><a href="{% url 'article:list' %}">Articles List</a></li>
+					{% if user.is_authenticated %}
+
+					<li>
+						<form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+							{% csrf_token %}
+							<button type="submit">Logout</button>
+						</form>
+					</li>
+					<li><a href="{% url 'article:create' %}" class="highlight">New Article</a></li>
+
+					{% else %}
+					<li><a href="{% url 'accounts:login' %}">Login</a></li>
+					<li><a href="{% url 'accounts:signup' %}">Signup</a></li>
+					{% endif %}
+				</ul>
+			</nav>
+		</header>
+		<div class="wrapper">
+			{% block content %}
+			{% endblock %}
+		</div>
+	</section>
+
+	<script src="/static/p5.min.js"></script>
+	<script src="/static/vanta.trunk.min.js"></script>
+	<script>
+		
+		VANTA.TRUNK({
+			el: ".main-content",
+			color: 0x#84ffff,
+			backgroundColor: 0x#7f53ac
+		})
+
+	</script>
+</body>
+</html>
