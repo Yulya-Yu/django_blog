@@ -16,7 +16,7 @@
 <body>
 	<div id="main">
 		<header class="wrapper">
-			<h1><a href="{% url 'home' %}"><img src="{% static 'logo1.png' %}" /></a></h1>
+			<h1><a href="{% url 'home' %}"><img src="{% static 'logo1.png' %}" class="home-logo" /></a></h1>
 			<nav>
 				<ul>
 					<li><a href="{% url 'about' %}">about</a></li>
@@ -37,12 +37,8 @@
 			<a href=""><img src="{% static 'telegram.svg' %}" class="icon"></a>
 			<a href="https://github.com/Yulya-Yu" target="_blank"><img src="{% static 'git.svg' %}" class="icon"></a>
 		</div>
-		<div class="copyright">© 2019. All Rights Reserved <span>yushkovayu.com</span></div>  
+		
 	</div>
-<script src="/static/p5.min.js"></script>
-<script src="/static/vanta.trunk.min.js"></script>
-<script>
-VANTA.TRUNK('#main)';
-</script>
+	<div class="copyright">© 2019. All Rights Reserved <span>yushkovayu.com</span></div>  
 </body>
 </html>
