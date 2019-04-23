@@ -30,9 +30,10 @@
 
 		<div class="project-detail">
 			<div class="project-info">
-				<img src="{{ project.thumb.url }}" />
+				
 				<div class="project-details">
 					<h2>{{project.title}}</h2>
+					<img src="{{ project.thumb.url }}" class="project-thumb" />
 					<p>{{project.body}}</p>
 					<div class="code-links">
 						<p><a href="{{project.urlDemo}}" class="demo-link"><i class="fas fa-laptop"></i>Live <span>Demo</span></a></p>
