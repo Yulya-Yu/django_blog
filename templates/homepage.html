@@ -7,39 +7,60 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="Description" content="FRont-End developer Yushkova, responsive design, react, for hire">
+	<meta name="Description" content="Front-End developer Yushkova, responsive design, react, for hire">
 	<title>Yushkova</title>
 	<link rel='stylesheet' href='{% static "styles.css" %}'>
+	<link rel='stylesheet' href='{% static "hover.css" %}'>
+	 
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,900&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div id="main">
 		<header class="wrapper">
-			<h1><a href="{% url 'home' %}"><img src="{% static 'logo1.png' %}" class="home-logo" alt="home-logo" /></a></h1>
+			
 			<nav>
-				<ul>
+				<div class="logo">
+					<h1><a href="{% url 'home' %}"><img src="{% static 'logo.png' %}" class="home-logo" alt="home-logo" /></a></h1>
+				</div>
+				<ul class="nav-links">
 					<li><a href="{% url 'about' %}">about</a></li>
 					<li><a href="{% url 'article:list' %}">blog</a></li>
 					<li><a href="{% url 'portfolio:list' %}">portfolio</a></li>
-					<li><a href="{% static 'cv.pdf' %}" download="Yushkova_CV" class="highlight">get CV</a></li>
-
+					<li><a href="{% static 'cv.pdf' %}" download="Yushkova_CV" class="hvr-bounce-to-right get-cv-btn">get CV</a></li>
 				</ul>
+				<div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
 			</nav>
 		</header>
 
 		<div class="main-header">
-			<h1>Yuliya Yushkova</h1>
-			<p class="main-text">front-end <span>developer</span></p>
-			
-			<a href="https://www.linkedin.com/in/yuliya-yushkova/" target="_blank" rel="noopener"><img src="{% static 'linkedin.svg' %}" class="icon" alt="linkedin-icon"></a>
-			<a href="mailto:kuroi.kasa1509@gmail.com" class="email-link" target="_blank" rel="noopener"><img src="{% static 'gmail.svg' %}" class="icon" alt="email-icon"></a>
-			<a href=""><img src="{% static 'telegram.svg' %}" class="icon" alt="telegram-icon"></a>
-			<a href="https://github.com/Yulya-Yu" target="_blank" rel="noopener"><img src="{% static 'git.svg' %}" class="icon" alt="github-icon"></a>
+			<div class="icons-all">
+				<a href="https://www.linkedin.com/in/yuliya-yushkova/" target="_blank" rel="noopener"><img src="{% static 'linkedin.svg' %}" class="icon" alt="linkedin-icon"></a>
+				<a href="mailto:kuroi.kasa1509@gmail.com" class="email-link" target="_blank" rel="noopener"><img src="{% static 'gmail.svg' %}" class="icon" alt="email-icon"></a>
+				<a href=""><img src="{% static 'skype.svg' %}" class="icon" alt="skype-icon"></a>
+				<a href="https://github.com/Yulya-Yu" target="_blank" rel="noopener"><img src="{% static 'git.svg' %}" class="icon" alt="github-icon"></a>
+			</div>
+			<div class="intro-home">
+				<h1>Yuliya <span>Yushkova</span></h1>
+				<p class="main-text">front-end developer.</p>
+				<button class="learn-more-btn"><a href="{% url 'about' %}">Learn more</a></button>
+			</div>
+
+		<!--	<div class="intro-message">
+				<p>Hi, I'm Yuliya! An aspiring Front-End Developer based in Tomsk, Russia. I have a passion for web design and love to create clean and responsive layouts using the latest technologies available. If you have a project in mind, think you can use my help with something or just fancy saying hi, get in touch.</p>
+				
+			</div> -->
+
 		</div>
 		
 	</div>
-	<div class="copyright">© 2019. All Rights Reserved <span>yushkovayu.com</span></div>  
+<script src='{% static "app.js" %}'></script>  
 </body>
 </html>
