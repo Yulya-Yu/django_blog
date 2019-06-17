@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" content="FRont-End developer Yushkova, responsive design, react, for hire">
 	<title>Articles</title>
-	<link rel='stylesheet' href='{% static "styles.css" %}'>
+	<link rel='stylesheet' href='{% static "about.css" %}'>
 	<link rel='stylesheet' href='{% static "hover.css" %}'>
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,900" rel="stylesheet">
@@ -17,10 +17,10 @@
 </head>
 <body>
 	<div id="about-main">
-		<header class="wrapper">
+		<header class="wrapper-about-section">
 			<nav class="nav-about-section">
 				<div class="logo">
-					<h1><a href="{% url 'home' %}"><img src="{% static 'logo1.png' %}" class="home-logo" alt="home-logo" /></a></h1>
+					<h1><a href="{% url 'home' %}"><img src="{% static 'logo6.png' %}" class="home-logo" alt="home-logo" /></a></h1>
 				</div>
 				<ul class="nav-links">
 					<li><a href="{% url 'about' %}">about</a></li>
@@ -35,14 +35,37 @@
 				</div>
 			</nav>
 		</header>
-		<div class="about-main">
+		<section class="about-main">
+			<div class="icons-all">
+				<a href="https://www.linkedin.com/in/yuliya-yushkova/" target="_blank" rel="noopener"><img src="{% static 'linkedin_about.svg' %}" class="icon" alt="linkedin-icon"></a>
+				<a href="mailto:kuroi.kasa1509@gmail.com" class="email-link" target="_blank" rel="noopener"><img src="{% static 'gmail_about.svg' %}" class="icon" alt="email-icon"></a>
+				<a href=""><img src="{% static 'skype_about.svg' %}" class="icon" alt="skype-icon"></a>
+				<a href="https://github.com/Yulya-Yu" target="_blank" rel="noopener"><img src="{% static 'git_about.svg' %}" class="icon" alt="github-icon"></a>
+			</div>
 			<div class="intro">
 				<div class="intro-text">
 					<h4>Hi, I'm <span>Yuliya</span></h4>
 					<p>An aspiring <span>Front-End Developer</span> based in Tomsk, Russia. I have a passion for web design and love to create clean and responsive layouts using the latest technologies available. If you have a project in mind, think you can use my help with something or just fancy saying hi, <span>get in touch.</span></p>
 				</div>
 			</div>
-		</div>
+		</section>
+		<section class="tech-stack">
+			<div class="tech-header">
+				<h1>Skills</h1>
+			</div>
+			<div class="tech-icons">
+				<img src="{% static 'skills/logo-javascript.svg' %}" class="skill-icon" alt="javascript-icon"/>
+				<img src="{% static 'skills/react.svg' %}" class="skill-icon" alt="react-icon"/>
+				<img src="{% static 'skills/nodejs-1.svg' %}" class="skill-icon" alt="node-icon"/>
+				<img src="{% static 'skills/npm.svg' %}" class="skill-icon" alt="npm-icon"/>
+				<img src="{% static 'skills/django.svg' %}" class="skill-icon" alt="django-icon"/>
+				<img src="{% static 'skills/html-5.svg' %}" class="skill-icon" alt="html-icon"/>
+				<img src="{% static 'skills/css.svg' %}" class="skill-icon" alt="css-icon"/>
+				<img src="{% static 'skills/github-icon.svg' %}" class="skill-icon" alt="github-icon"/>
+				<img src="{% static 'skills/git-icon.svg' %}" class="skill-icon" alt="git-icon"/>
+				<img src="{% static 'skills/ai.svg' %}" class="skill-icon" alt="ai-icon"/>
+			</div>
+		</section>
 	</div>
 	<script src='{% static "app.js" %}'></script>  
 </body>

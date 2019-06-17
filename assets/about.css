@@ -1,0 +1,290 @@
+
+
+body {
+	background-color: #fbfbff;
+	width: 100%;
+	height: 100vh;
+	color: #222;
+	margin: 0 auto;
+	padding: 0;
+	background-image:
+	url(top_about.svg),
+	url(about_girl4.svg),
+	url(shadow_about.svg),
+	url(blob_about.svg);
+	
+	background-position:
+	top -80px left 0,
+	top 370px right 140px,
+	top 570px right 160px,
+	top 130px right 50px;
+	
+	background-size:
+	350px 400px,
+	200px 200px,
+	150px 50px,
+	500px 500px;
+	
+	background-repeat: no-repeat;
+
+}
+
+.wrapper-about-section {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+#about-main {
+	height: 100vh;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.nav-links {
+	display: flex;
+	width: 40%;
+	justify-content: space-around;
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	list-style-type: none;
+	font-weight: 700;
+	margin-left: 350px;
+}
+
+.nav-links li {
+	margin-left: 40px;
+	transition: all .2s ease-in-out;
+}
+
+.nav-links li:hover {
+	transform: scale(1.2);
+
+}
+
+nav button{
+	background: none;
+	color: #6F00F7;
+	cursor: pointer;
+	border: 0;
+	font-size: 16px;
+}
+
+.get-cv-btn {
+	color: #35F5BB;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.get-cv-btn:hover {
+	color: #6F00F7;
+}
+
+.burger {
+	display: none;
+}
+
+
+.burger div{
+	width: 30px;
+	height: 3px;
+	background-color: #6F00F7;
+	margin: 5px;
+	transition: all 0.4s ease;
+}
+
+
+.nav-about-section {
+	margin-top: 30px;
+}
+
+a, a:hover, a:visited{
+	text-decoration: none;
+}
+
+a:hover {
+	color: #35F5BB;
+}
+nav a {
+	color: #6F00F7;
+}
+
+.about-main {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.intro-text h4 {
+	color: #6F00F7;
+	font-family: 'Raleway', sans-serif;
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.intro-text p {
+	color: #6F00F7;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 0;
+
+}
+
+.intro {
+	margin-left: 120px;
+	margin-top: 50px;
+}
+
+.icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	transition: all .2s ease-in-out;
+}
+
+.icon:hover {
+	transform: scale(1.7);
+}
+
+.icons-all{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: 40px;
+	margin-top: 150px;
+}
+
+.skill-icon {
+	width: 60px;
+	height: 70px;
+}
+
+@media screen and (max-width: 1105px) {
+
+	body{
+		overflow-y: hidden;
+		overflow-x: hidden;
+	}
+
+
+
+}
+
+@media screen and (max-width: 917px) {
+
+	.wrapper{
+		max-width: 850px;
+	}
+}
+
+@media screen and (max-width: 910px) {
+
+	body {
+		overflow-x: hidden;
+	}
+
+	.wrapper{
+		max-width: 800px;
+	}
+
+	
+	nav {
+		margin: 0 0;
+	}
+
+	.nav-links{
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		top: 0;
+		margin: 0 auto;
+		width: 100%;
+		align-items: center;
+		background-color: rgba(111, 0, 247, 0.8);
+		transform: translateX(150%);
+		transition: transform 0.5s ease-in;
+		opacity: 0;
+		z-index: 1;
+
+	}
+
+	.nav-links li {
+		opacity: 0;
+	}
+
+	.nav-links li a {
+		color: #fafafa;
+		font-size: 30px
+
+	}
+
+	.get-cv-btn {
+		border: 1px solid #35F5BB;
+		padding: 10px 15px;
+		border-radius: 4px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+	}
+
+	.burger {
+		display: block;
+		cursor: pointer;
+		z-index: 1;
+	}
+
+}
+
+.nav-active {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(100px);
+
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+	background-color: #35F5BB;
+}
+
+.toggle .line2 {
+	opacity: 0;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+	background-color: #35F5BB;
+}
+
+@media screen and (max-width: 700px) {
+
+	body {
+		overflow-x: hidden;
+	}
+
+	.wrapper{
+		max-width: 800px;
+	}
+
+}
