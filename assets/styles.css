@@ -3,30 +3,53 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #f5f5f5; 
+	background-color: #fff;
 	background-repeat: no-repeat;
 	height: 100vh;
 	width: 100%;
 	background-image:
+	url(top_about.svg),
+	url(main_img.svg),
+	url(blue_cloud.svg);
+/*	url(top_about2.svg),
+	url(main_img.svg),
+	url(blue_mount4.svg); */
+	/*
 	url(half.svg),
-	url(girl.svg),
+	url(main_img.svg),
 	url(elipse.svg),
-	url(main.svg);
+	url(main.svg); */
 
 	background-position:
 	
-	top 330px left -50px,
+	top -80px left 0,
+	bottom 60px right 120px,
+	bottom 30px right 300px;
+/*	top -80px left 0,
+	bottom 60px right 120px,
+	top -20px right 0; */
+	
+
+/*	top 330px left -50px,
 	bottom 60px right 120px,
 	top 200px right -60px,
-	100% 100%;
+	100% 100%; */
 
 
 	background-size:
 	
-	200px 200px,
+	350px 400px,
+	550px 550px,
+	550px 550px;
+/*	350px 400px,
+	550px 550px,
+	auto 110vh; */
+	
+
+/*	200px 200px,
 	550px 550px,
 	250px 250px,
-	100% auto;
+	100% auto; */
 }
 
 .main-content{
@@ -57,13 +80,6 @@ a:hover {
 	height: 100vh;
 }
 
-#main-project {
-	width: 100%;
-	height: auto;
-	padding-bottom: 30px;
-}
-
-
 
 .main-header {
 	width: 70%;
@@ -72,7 +88,7 @@ a:hover {
 }
 
 .main-header h1 {
-	color: #ffffff;
+	color: #6200ea;
 	font-size: 46px;
 	text-align: left;
 	font-family: 'Quicksand', cursive;
@@ -80,7 +96,7 @@ a:hover {
 }
 
 .main-text {
-	color: #ffffff;
+	color: #6200ea;
 	font-size: 46px;
 	text-align: left;
 	font-family: 'Quicksand', cursive;
@@ -89,7 +105,7 @@ a:hover {
 }
 
 .main-header h1 span {
-	color: #35F5BB;
+	color: #1ee3cf;
 }
 
 .wrapper{
@@ -126,12 +142,13 @@ nav {
 }
 
 nav a {
-	color: #6F00F7;
+	color: #6200ea;
+
 }
 
 nav button{
 	background: none;
-	color: #6F00F7;
+	color: #6200ea;
 	cursor: pointer;
 	border: 0;
 	font-size: 16px;
@@ -140,14 +157,14 @@ nav button{
 
 .get-cv-btn {
 
-	color: #35F5BB;
+	color: #1ee3cf;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 }
 
 .get-cv-btn:hover {
-	color: #6F00F7;
+	color: #6200ea;
 }
 
 .burger {
@@ -158,7 +175,7 @@ nav button{
 .burger div{
 	width: 30px;
 	height: 3px;
-	background-color: #6F00F7;
+	background-color: #6200ea;
 	margin: 5px;
 	transition: all 0.4s ease;
 
@@ -209,7 +226,7 @@ nav button{
 }
 
 .learn-more-btn {
-	border: 1px solid #fff; 
+	border: 1px solid #6200ea; 
 	padding: 10px 20px; 
 	border-radius: 4px; 
 	background-color: transparent;
@@ -220,15 +237,87 @@ nav button{
 }
 
 .learn-more-btn:hover{
-	border: 1px solid #35F5BB;
+	border: 1px solid #1ee3cf;
 }
 
 .learn-more-btn a {
-	color: #fff;	
+	color: #6200ea;	
 }
 
 .learn-more-btn a:hover {
 	color: #fff;
+}
+
+.tech-icons {
+	min-height: 400px;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 45%;
+	margin: 0 auto;
+}
+
+.skill-icon {
+	flex: 0 0 auto;
+	margin: 25px;
+	width: 100px;
+	height: 100px;
+	transition: all .3s ease-in-out;
+}
+
+.skill-icon:hover {
+	transform: scale(1.5);
+}
+
+
+
+.tech-header h1{
+	display: flex;
+	justify-content: center;
+	color: #6200ea;
+	font-size: 46px;
+	font-family: 'Raleway', cursive;
+	font-weight: 700;
+	margin: 5% auto 2% auto;
+
+}
+
+.introduction {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+    width: 45%;
+    margin: 0 auto;
+    height: 40vh;
+}
+
+.introduction h3, .services h3 {
+	display: flex;
+	justify-content: center;
+	color: #6200ea;
+	font-size: 26px;
+	font-family: 'Raleway', cursive;
+	font-weight: 700;
+}
+
+.introduction hr, .services hr {
+	width: 50px;
+	height: 2px;
+	background-color: #35F5BB;
+	border: none;
+}
+
+.introduction p {
+	display: flex;
+	justify-content: center;
+	color: #6200ea;
+	font-size: 16px;
+	font-family: 'Raleway', cursive;
+	font-weight: 400;
 }
 
 .articles{
@@ -282,155 +371,6 @@ nav button{
 	text-align: center;
 }
 
-/* PROJECT LIST PAGE */
-
-#project-title a{
-	color: #00dba0;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 300;
-}
-
-.thumb-img {
-	width: 250px;
-	height: 150px;
-	margin: 20px 0;
-}
-
-.project-list {
-	font-family: 'Ubuntu', sans-serif;
-	text-align: center;
-	color: #fff;
-	font-size: 48px;
-}
-.project-list span {
-	color: #84ffff;
-	font-weight: 300;
-	font-size: 32px;
-}
-
-.list-whole{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 70px;
-	margin: 35px 150px;
-	color: #222;
-}
-
-.list-item{
-	padding: 25px;
-	position: relative;
-	font-family: 'Lato', sans-serif;
-	background-color: #fafafa;
-	color: #222;
-	border-radius: 8px;
-}
-
-.list-item p {
-	color: #222;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-}
-
-
-.project-main {
-	margin-top: 80px;
-}
-
-/* INDUVIDUAL PROJECT PAGE */
-
-.project-info {
-	display: flex;
-	flex-direction: row;
-	margin: 50px 150px;
-}
-
-.project-info img {
-	width: 45%;
-	height: 35%;
-}
-
-.project-details {
-	margin-left: 40px;
-	align-content: center;
-}
-
-.project-details h2 {
-	font-family: 'Raleway', sans-serif;
-	color: #fff;
-	font-size: 2em;
-	font-weight: 400;
-}
-
-.project-details p {
-	font-family: 'Lato', sans-serif;
-	color: #fff;
-	font-size: 1.3em;
-	font-weight: 300;
-}
-
-.project-details p:last-child {
-	font-family: 'Lato', sans-serif;
-	color: #84ffff;
-	font-size: 1.1em;
-	font-weight: 300;
-}
-
-.code-links {
-	display: flex;
-	flex-direction: row;
-}
-
-.fa-laptop, .fa-github {
-	margin-right: 15px;
-}
-
-.github-link {
-	margin-left: 50px;
-	font-size: 20px;
-}
-
-.demo-link span, .github-link span {
-	color: #84ffff;  
-}
-
-.demo-link {
-	font-size: 20px;
-
-}
-
-.code-links i{
-	font-size: 26px;
-
-}
-
-.techno {
-	margin: 0;
-	padding: 0;
-}
-
-.techno p {
-	font-size: 20px;
-	font-family: 'Lato', sans-serif;
-	color: #fff;
-	font-weight: 300;
-}
-
-.techno p span {
-	color: #84ffff;  
-}
-
-.techno-icons {
-	display: flex;
-	flex-direction: row;
-	color: #fff;
-	list-style: none;
-	padding: 0;
-}
-
-.techno-icons i {
-	font-size: 26px;
-	margin-left: 8px;
-}
 
 
 /* LOGIN AND ADD ARTICLE FORMS */

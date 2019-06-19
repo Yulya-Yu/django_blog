@@ -8,10 +8,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" width="device-width", initial-scale="1">
 	<title>Portfolio</title>
-	<link rel='stylesheet' href='{% static "styles.css" %}'>
+	<link rel='stylesheet' href='{% static "portfolio.css" %}'>
 	<link rel='stylesheet' href='{% static "hover.css" %}'>
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700" rel="stylesheet">
 </head>
@@ -20,7 +20,7 @@
 		<header class="wrapper">
 			<nav>
 				<div class="logo">
-					<h1><a href="{% url 'home' %}"><img src="{% static 'logo.png' %}" class="home-logo" alt="home-logo" /></a></h1>
+					<h1><a href="{% url 'home' %}"><img src="{% static 'logo6.png' %}" class="home-logo" alt="home-logo" /></a></h1>
 				</div>
 				<ul class="nav-links">
 					<li><a href="{% url 'about' %}">about</a></li>
@@ -36,12 +36,12 @@
 			</nav>
 		</header>
 		<div class="project-main">
-			<h1 class="project-list">Project <span>List</span></h1>
+			<h1 class="project-list">Project List</h1>
 			<div class="list-whole">
 				{% for project in project %}
 				<div class="list-item">	
-					<h3 id="project-title"><a href="{{project.slug}}">{{ project.title }}</a></h3>
 					<img class="thumb-img" src="{{ project.thumb.url }}" />
+					<h3 id="project-title"><a href="{{project.slug}}">{{ project.title }}</a></h3>
 					<p>{{ project.snippet }}</p>
 					<p class="project-date">{{ project.date }}</p>
 				</div>

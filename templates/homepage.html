@@ -11,7 +11,7 @@
 	<title>Yushkova</title>
 	<link rel='stylesheet' href='{% static "styles.css" %}'>
 	<link rel='stylesheet' href='{% static "hover.css" %}'>
-	 
+	
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
@@ -24,7 +24,7 @@
 			
 			<nav>
 				<div class="logo">
-					<h1><a href="{% url 'home' %}"><img src="{% static 'logo5.png' %}" class="home-logo" alt="home-logo" /></a></h1>
+					<h1><a href="{% url 'home' %}"><img src="{% static 'logo6.png' %}" class="home-logo" alt="home-logo" /></a></h1>
 				</div>
 				<ul class="nav-links">
 					<li><a href="{% url 'about' %}">about</a></li>
@@ -42,10 +42,10 @@
 
 		<div class="main-header">
 			<div class="icons-all">
-				<a href="https://www.linkedin.com/in/yuliya-yushkova/" target="_blank" rel="noopener"><img src="{% static 'linkedin.svg' %}" class="icon" alt="linkedin-icon"></a>
-				<a href="mailto:kuroi.kasa1509@gmail.com" class="email-link" target="_blank" rel="noopener"><img src="{% static 'gmail.svg' %}" class="icon" alt="email-icon"></a>
-				<a href=""><img src="{% static 'skype.svg' %}" class="icon" alt="skype-icon"></a>
-				<a href="https://github.com/Yulya-Yu" target="_blank" rel="noopener"><img src="{% static 'git.svg' %}" class="icon" alt="github-icon"></a>
+				<a href="https://www.linkedin.com/in/yuliya-yushkova/" target="_blank" rel="noopener"><img src="{% static 'linkedin_about.svg' %}" class="icon" alt="linkedin-icon"></a>
+				<a href="mailto:kuroi.kasa1509@gmail.com" class="email-link" target="_blank" rel="noopener"><img src="{% static 'gmail_about.svg' %}" class="icon" alt="email-icon"></a>
+				<a href=""><img src="{% static 'skype_about.svg' %}" class="icon" alt="skype-icon"></a>
+				<a href="https://github.com/Yulya-Yu" target="_blank" rel="noopener"><img src="{% static 'git_about.svg' %}" class="icon" alt="github-icon"></a>
 			</div>
 			<div class="intro-home">
 				<h1>Yuliya <span>Yushkova</span></h1>
@@ -61,6 +61,33 @@
 		</div>
 		
 	</div>
-<script src='{% static "app.js" %}'></script>  
+	<section class="introduction">
+		<h3>Hi, I'm <span>Yuliya</span></h3>
+		<hr/>
+		<p>Front-End Developer based in Tomsk, Russia. I have a passion for web design and love to create clean and responsive layouts using the latest technologies available. If you have a project in mind, think you can use my help with something or just fancy saying hi, get in touch.</p>
+	</section>
+	<section class="services">
+		<h3>What can I do for you</h3>
+		<hr/>
+		<p>Front-End Developer based in Tomsk, Russia. I have a passion for web design and love to create clean and responsive layouts using the latest technologies available. If you have a project in mind, think you can use my help with something or just fancy saying hi, get in touch.</p>
+	</section>
+	<section class="tech-stack">
+		<div class="tech-header">
+			<h1>Skills</h1>
+		</div>
+		<div class="tech-icons">
+			<img src="{% static 'skills/logo-javascript.svg' %}" class="skill-icon" alt="javascript-icon" title="javascript"/>
+			<img src="{% static 'skills/react.svg' %}" class="skill-icon" alt="react-icon" title="react"/>
+			<img src="{% static 'skills/nodejs-1.svg' %}" class="skill-icon" alt="node-icon" title="node.js"/>
+			<img src="{% static 'skills/npm.svg' %}" class="skill-icon" alt="npm-icon" title="npm"/>
+			<img src="{% static 'skills/django.svg' %}" class="skill-icon" alt="django-icon" title="django"/>
+			<img src="{% static 'skills/html-5.svg' %}" class="skill-icon" alt="html-icon" title="html"/>
+			<img src="{% static 'skills/css.svg' %}" class="skill-icon" alt="css-icon" title="css"/>
+			<img src="{% static 'skills/github-icon.svg' %}" class="skill-icon" alt="github-icon" title="github"/>
+			<img src="{% static 'skills/git-icon.svg' %}" class="skill-icon" alt="git-icon" title="git"/>
+			<img src="{% static 'skills/ai.svg' %}" class="skill-icon" alt="ai-icon" title="Illustrator"/>
+		</div>
+	</section>
+	<script src='{% static "app.js" %}'></script>  
 </body>
 </html>
