@@ -143,7 +143,7 @@ nav button{
 	font-weight: 700;
 }
 
-
+/*
 
 .list-whole{
 	width: 55%;
@@ -187,6 +187,38 @@ nav button{
 .project-main {
 	margin-top: 80px;
 }
+
+*/
+
+.list-whole {
+display: grid;
+
+grid-template-columns: 1fr 1fr 1fr 1fr;
+
+grid-template-rows: 1fr 1fr 1fr 1fr;
+
+grid-column-gap: 20px;
+
+grid-row-gap: 20px;
+
+.about-projects { grid-area: 1 / 1 / 4 / 2; }
+
+.list-item { grid-area: 1 / 2 / 2 / 3; }
+
+.list-item { grid-area: 1 / 3 / 2 / 4; }
+
+.list-item{ grid-area: 1 / 4 / 2 / 5; }
+
+.list-item { grid-area: 2 / 2 / 3 / 3; }
+
+.list-item { grid-area: 2 / 3 / 3 / 4; }
+
+}
+
+.list-whole {
+	margin: 50px 50px;
+}
+
 
 /* INDUVIDUAL PROJECT PAGE */
 

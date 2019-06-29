@@ -7,33 +7,43 @@ body {
 	background-repeat: no-repeat;
 	height: 100vh;
 	width: 100%;
+	background-image: 
+	url(pale_rocket3.svg);
+	background-position: 
+	top -100px right 70px;
+
+	background-size: 
+	1100px 900px;
+	/*
 	background-image:
 	url(top_about.svg),
 	url(main_img.svg),
 	url(blue_cloud.svg);
-/*	url(top_about2.svg),
+
+	url(top_about2.svg),
 	url(main_img.svg),
-	url(blue_mount4.svg); */
-	/*
+	url(blue_mount4.svg); 
+	
 	url(half.svg),
 	url(main_img.svg),
 	url(elipse.svg),
-	url(main.svg); */
+	url(main.svg); 
 
 	background-position:
 	
 	top -80px left 0,
 	bottom 60px right 120px,
 	bottom 30px right 300px;
-/*	top -80px left 0,
+	
+	top -80px left 0,
 	bottom 60px right 120px,
-	top -20px right 0; */
+	top -20px right 0; 
 	
 
-/*	top 330px left -50px,
+	top 330px left -50px,
 	bottom 60px right 120px,
 	top 200px right -60px,
-	100% 100%; */
+	100% 100%; 
 
 
 	background-size:
@@ -41,16 +51,18 @@ body {
 	350px 400px,
 	550px 550px,
 	550px 550px;
-/*	350px 400px,
+
+	350px 400px,
 	550px 550px,
-	auto 110vh; */
+	auto 110vh; 
 	
 
-/*	200px 200px,
+	200px 200px,
 	550px 550px,
 	250px 250px,
-	100% auto; */
-}
+	100% auto; 
+*/
+	}
 
 .main-content{
 	color: #fff;
@@ -70,7 +82,7 @@ a, a:hover, a:visited{
 }
 
 a:hover {
-	color: #35F5BB;
+	color: #10eaf0;
 }
 
 
@@ -88,24 +100,24 @@ a:hover {
 }
 
 .main-header h1 {
-	color: #6200ea;
-	font-size: 46px;
+	color: #0028ff;
+	font-size: 48px;
 	text-align: left;
-	font-family: 'Quicksand', cursive;
+	font-family: 'Raleway', cursive;
 	font-weight: 700;
 }
 
 .main-text {
-	color: #6200ea;
-	font-size: 46px;
+	color: #0028ff;
+	font-size: 48px;
 	text-align: left;
-	font-family: 'Quicksand', cursive;
+	font-family: 'Raleway', cursive;
 	font-weight: 700;
 	margin-top: 0;
 }
 
 .main-header h1 span {
-	color: #1ee3cf;
+	color: #10eaf0;
 }
 
 .wrapper{
@@ -142,13 +154,13 @@ nav {
 }
 
 nav a {
-	color: #6200ea;
+	color: #0028ff;
 
 }
 
 nav button{
 	background: none;
-	color: #6200ea;
+	color: #0028ff;
 	cursor: pointer;
 	border: 0;
 	font-size: 16px;
@@ -157,14 +169,14 @@ nav button{
 
 .get-cv-btn {
 
-	color: #1ee3cf;
+	color: #10eaf0;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 }
 
 .get-cv-btn:hover {
-	color: #6200ea;
+	color: #0028ff;
 }
 
 .burger {
@@ -175,7 +187,7 @@ nav button{
 .burger div{
 	width: 30px;
 	height: 3px;
-	background-color: #6200ea;
+	background-color: #0028ff;
 	margin: 5px;
 	transition: all 0.4s ease;
 
@@ -211,8 +223,8 @@ nav button{
 }
 
 .intro-home {
-	margin-left: 150px;
-	margin-top: 100px;
+	margin-left: 110px;
+	margin-top: 130px;
 	width: 55%;
 }
 
@@ -226,10 +238,12 @@ nav button{
 }
 
 .learn-more-btn {
-	border: 1px solid #6200ea; 
+	/* border: 1px solid #0028ff; */
+
+	border: none;
 	padding: 10px 20px; 
 	border-radius: 4px; 
-	background-color: transparent;
+	background-color: #0028ff;
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 	font-weight: 700;
@@ -237,17 +251,17 @@ nav button{
 }
 
 .learn-more-btn:hover{
-	border: 1px solid #1ee3cf;
+	border: 1px solid #10eaf0;
 }
 
 .learn-more-btn a {
-	color: #6200ea;	
+	color: #fff;	
 }
 
 .learn-more-btn a:hover {
 	color: #fff;
 }
-
+/*
 .tech-icons {
 	min-height: 400px;
 	display: flex;
@@ -319,7 +333,7 @@ nav button{
 	font-family: 'Raleway', cursive;
 	font-weight: 400;
 }
-
+*/
 .articles{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;

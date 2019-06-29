@@ -20,7 +20,7 @@
 		<header class="wrapper-about-section">
 			<nav class="nav-about-section">
 				<div class="logo">
-					<h1><a href="{% url 'home' %}"><img src="{% static 'logo6.png' %}" class="home-logo" alt="home-logo" /></a></h1>
+					<h1><a href="{% url 'home' %}"><img src="{% static 'logo7.png' %}" class="home-logo" alt="home-logo" /></a></h1>
 				</div>
 				<ul class="nav-links">
 					<li><a href="{% url 'about' %}">about</a></li>
@@ -43,13 +43,53 @@
 				<a href="https://github.com/Yulya-Yu" target="_blank" rel="noopener"><img src="{% static 'git_about.svg' %}" class="icon" alt="github-icon"></a>
 			</div>
 			<div class="intro">
+				<div class="intro-image">
+					<img src="{% static 'about_girl.svg' %}" class="about_girl" alt="girl vector image" />
+				</div>
 				<div class="intro-text">
-					<h4>Hi, I'm <span>Yuliya</span></h4>
-					<p>An aspiring <span>Front-End Developer</span> based in Tomsk, Russia. I have a passion for web design and love to create clean and responsive layouts using the latest technologies available. If you have a project in mind, think you can use my help with something or just fancy saying hi, <span>get in touch.</span></p>
+					<h4>HI, I'M YULIYA</h4>
+					<h6><span>Front-End Developer</span> based in Tomsk, Russia.</h6>
+					<p>I have a passion for web design and love to create clean and responsive layouts using the latest technologies available. If you have a project in mind, think you can use my help with something or just fancy saying hi, <span>get in touch.</span></p>
 				</div>
 			</div>
 		</section>
-
+		<section class="services">
+			<h3>what can I do for you</h3>
+			<div class="service-cards">
+				<div class="card1">
+					<h4>web-development</h4>
+					<img src="{% static 'webdev.svg' %}" class="webdev service" />
+					<p></p>
+				</div>
+				<div class="card2">
+					<h4>responsive web-design</h4>
+					<img src="{% static 'respdesign.svg' %}" class="responsive design service" />
+					<p></p>
+				</div>
+				<div class="card3">
+					<h4>maintenance & optimization</h4>
+					<img src="{% static 'maint.svg' %}" class="maintenance & optimization service" />
+					<p></p>
+				</div>
+			</div>
+		</section>
+		<section class="tech-stack">
+			<div class="tech-header">
+				<h3>skills</h3>
+			</div>
+			<div class="tech-icons">
+				<img src="{% static 'skills/logo-javascript.svg' %}" class="skill-icon" alt="javascript-icon" title="javascript"/>
+				<img src="{% static 'skills/react.svg' %}" class="skill-icon" alt="react-icon" title="react"/>
+				<img src="{% static 'skills/nodejs-1.svg' %}" class="skill-icon" alt="node-icon" title="node.js"/>
+				<img src="{% static 'skills/npm.svg' %}" class="skill-icon" alt="npm-icon" title="npm"/>
+				<img src="{% static 'skills/django.svg' %}" class="skill-icon" alt="django-icon" title="django"/>
+				<img src="{% static 'skills/html-5.svg' %}" class="skill-icon" alt="html-icon" title="html"/>
+				<img src="{% static 'skills/css.svg' %}" class="skill-icon" alt="css-icon" title="css"/>
+				<img src="{% static 'skills/github-icon.svg' %}" class="skill-icon" alt="github-icon" title="github"/>
+				<img src="{% static 'skills/git-icon.svg' %}" class="skill-icon" alt="git-icon" title="git"/>
+				<img src="{% static 'skills/ai.svg' %}" class="skill-icon" alt="ai-icon" title="Illustrator"/>
+			</div>
+		</section>
 	</div>
 	<script src='{% static "app.js" %}'></script>  
 </body>
