@@ -1,12 +1,20 @@
 
 
 body {
-	background-color: #fbfbff;
+	background-color: #fff;
 	width: 100%;
 	height: 100vh;
 	color: #222;
 	margin: 0 auto;
 	padding: 0;
+	background-repeat: no-repeat;
+	background-image: 
+	url(about_girl.svg);
+	background-position: 
+	top -160px left 60px;
+
+	background-size: 
+	1000px 900px;
 }
 
 .wrapper-about-section {
@@ -113,48 +121,45 @@ nav a {
 .intro {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: flex-end;
 	align-items: center;
-	width: 57%;
-	margin: 6% auto 10% auto;
+	width: 45%;
+	margin: 6% 13% 10% auto;
 	height: 50vh;
 }
 
-.intro-image {
-	width: 600px;
-
-}
 
 .intro-text h4 {
 	margin-left: 100px;
-	font-size: 64px;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 900;
 	color: #0028ff;
 	margin-top: 0;
 	margin-bottom: 0;
+	font-size: 48px;
+	font-weight: 700;
 }
 
 .intro-text h6 {
 	margin-left: 100px;
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
+	font-weight: 400;
 	color: #0028ff;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
+/*
 .intro-text h6 span, .intro-text p span {
 	color: #10eaf0;
 }
-
+*/
 .intro-text p {
 	margin-left: 100px;
 	font-size: 14px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-	color: #0028ff;
+	color: #494453;
 	margin-top: 10px;
 	margin-bottom: 0;
 }
@@ -177,6 +182,7 @@ nav a {
 	justify-content: flex-start;
 	margin-left: 40px;
 	margin-top: 150px;
+	position: fixed;
 }
 
 .skill-icon {
@@ -201,16 +207,14 @@ nav a {
 .skill-icon {
 	flex: 0 0 auto;
 	margin: 25px;
-	width: 100px;
-	height: 100px;
+	width: 90px;
+	height: 90px;
 	transition: all .3s ease-in-out;
 }
 
 .skill-icon:hover {
-	transform: scale(1.5);
+	transform: scale(1.2);
 }
-
-
 
 .tech-header h1{
 	display: flex;
@@ -223,16 +227,6 @@ nav a {
 
 }
 
-.introduction {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-    width: 45%;
-    margin: 100px auto;
-    height: 40vh;
-
-}
-
 .tech-header h3, .services h3 {
 	display: flex;
 	justify-content: center;
@@ -242,24 +236,58 @@ nav a {
 	font-weight: 700;
 }
 
-
-.introduction p {
-	display: flex;
-	justify-content: center;
-	color: #6200ea;
-	font-size: 16px;
-	font-family: 'Raleway', cursive;
-	font-weight: 400;
+.services {
+	height: 100vh;
 }
 
 .service-cards {
 	display: grid;
-	width: 70%;
-	margin: 0 auto;
+	width: 80%;
+	margin: 100px auto;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 50px;
-	align-items: center;
+	grid-gap: 100px;
+	grid-template-rows: 370px;
 	justify-content: center;
+
+}
+
+.card1, .card2, .card3 {
+	-webkit-box-shadow: 0px 0px 7px 1px rgba(73,68,83,0.55); 
+	box-shadow: 0px 0px 7px 1px rgba(73,68,83,0.55);
+	border-radius: 10px;
+	transition: all .4s ease-in-out;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+	transform: scale(1.1);
+
+}
+
+
+.card1 h4, .card2 h4, .card3 h4{
+	text-align: center;
+	color: #0028FF;
+	font-size: 20px;
+	font-family: 'Raleway', cursivesans-serif;
+	font-weight: 600;
+	align-self: start;
+	margin-top: 55px;
+	padding: 0 7%;
+}
+
+.service {
+	width: 100px;
+	height: 100px;
+	margin: 10px auto 10px 30%;
+	align-items: center;
+}
+
+.card1 p, .card2 p, .card3 p{
+	color: #494453;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	padding: 0 9%;
 }
 
 @media screen and (max-width: 1105px) {
