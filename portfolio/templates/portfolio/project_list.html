@@ -14,13 +14,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 </head>
 <body>
 	<div id="main-project">
 		<header class="wrapper">
 			<nav>
 				<div class="logo">
-					<h1><a href="{% url 'home' %}"><img src="{% static 'logo6.png' %}" class="home-logo" alt="home-logo" /></a></h1>
+					<h1><a href="{% url 'home' %}"><img src="{% static 'logo7.png' %}" class="home-logo" alt="home-logo" /></a></h1>
 				</div>
 				<ul class="nav-links">
 					<li><a href="{% url 'about' %}">about</a></li>
@@ -37,20 +38,35 @@
 		</header>
 		<div class="project-main">
 			<h1 class="project-list">Project List</h1>
+			
 			<div class="list-whole">
-				<div class="about-projects">
-					<h3>About projects</h3>
-					<p>jfkdhgnyvwsbficdsyb we6rwebdsgfgdsk kjdskvhfmsdg</p>
-				</div>
 				{% for project in project %}
 				<div class="list-item">	
-					<img class="thumb-img" src="{{ project.thumb.url }}" />
-					<h3 id="project-title"><a href="{{project.slug}}">{{ project.title }}</a></h3>
-					<p>{{ project.snippet }}</p>
-					<p class="project-date">{{ project.date }}</p>
+					<div class="img-container">
+						<img class="thumb-img" src="{{ project.thumb.url }}" />
+					</div>
+					<div class="project-info-container">
+						<h3 id="project-title"><a href="{{project.slug}}">{{ project.title }}</a></h3>
+						<p>{{ project.body }}</p>
+						<div class="code-links">
+							<p><a href="{{project.urlDemo}}" class="demo-link"><i class="fas fa-laptop"></i>Live Demo</a></p>
+							<p><a href="{{project.urlGit}}" class="github-link"><i class="fab fa-github"></i>Source Code</a></p>
+						</div>
+						<div class="techno">
+							<p>Technologies used</p>
+							<ul class="techno-icons">
+								<li><i class="fab fa-html5" title="HTML5"></i></li> 
+								<li><i class="fab fa-css3-alt" title="CSS3"></i></li> 
+								<li><i class="fab fa-react" title="React"></i></li> 
+								<li><i class="fab fa-npm" title="npm"></i></li>
+								<li><i class="fab fa-js-square" title="JavaScript"></i></li>
+							</ul>
+						</div>
+						<p class="project-date">{{ project.date }}</p>
+					</div>
 				</div>
 				{% endfor %}
-			</div>
+			</div>  
 		</div>
 		<script src='{% static "app.js" %}'></script>  
 	</body>

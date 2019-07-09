@@ -182,7 +182,6 @@ nav a {
 	justify-content: flex-start;
 	margin-left: 40px;
 	margin-top: 150px;
-	position: fixed;
 }
 
 .skill-icon {
@@ -198,22 +197,26 @@ nav a {
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
-	align-content: center;
-	width: 45%;
+/*	align-items: center;
+	align-content: center; */
+	width: 70%;
 	margin: 0 auto;
 }
 
 .skill-icon {
 	flex: 0 0 auto;
-	margin: 25px;
-	width: 90px;
-	height: 90px;
+	margin: 10px;
+	width: 50px;
+	height: 50px;
 	transition: all .3s ease-in-out;
 }
 
 .skill-icon:hover {
 	transform: scale(1.2);
+}
+
+.front-end-icons, .libraries, .frameworks, .other {
+	margin-right: 30px;
 }
 
 .tech-header h1{
@@ -237,10 +240,19 @@ nav a {
 	padding-top: 50px;
 }
 
+.services h3 {
+	color: #fff;
+}
+
+
+
+
 .services {
 	height: 100vh;
-	background-color: rgba(0, 206, 255, 0.2);
-clip-path: polygon(0 0, 0% 20%, 0 48%, 0 99%, 23% 90%, 55% 94%, 86% 97%, 100% 91%, 100% 48%, 100% 20%, 100% 0, 59% 0);
+	width: 100%;
+background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
 }
 
 .service-cards {
@@ -251,22 +263,20 @@ clip-path: polygon(0 0, 0% 20%, 0 48%, 0 99%, 23% 90%, 55% 94%, 86% 97%, 100% 91
 	grid-gap: 100px;
 	grid-template-rows: 370px;
 	justify-content: center;
-
 }
 
 .card1, .card2, .card3 {
-/*	-webkit-box-shadow: 0px 4px 4px 1px rgba(73,68,83,0.55); 
-	box-shadow: 0px 2px 6px 2px rgba(73,68,83,0.55); */
-	transition: all .4s ease-in-out;
-	background-color: #fff;
+transition: all .4s ease-in-out;
+background-color: #fff;
+border-radius: 5px;
 }
 
 .card1 {
-	border-top: 5px solid #57FBDB;
+	border-top: 5px solid #FEE140;
 }
 
 .card2 {
-	border-top: 5px solid #A600B1;
+	border-top: 5px solid #FA709A;
 }
 
 .card3 {

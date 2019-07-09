@@ -3,23 +3,9 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #CCFCFD;
-	background-repeat: no-repeat;
 	height: 100vh;
 	width: 100%;
-	background-image:
-	url(top_cloud.svg),
-	url(blue_cloud.svg);
 
-
-	background-position:
-	top -80px left 0,
-	bottom 30px right 300px;
-
-
-	background-size:
-	350px 400px,
-	550px 550px;
 }
 
 h1, h2, h3, h4, h5{
@@ -76,13 +62,13 @@ nav {
 }
 
 nav a {
-	color: #6200ea;
+	color: #0028ff;
 
 }
 
 nav button{
 	background: none;
-	color: #6200ea;
+	color: #0028ff;
 	cursor: pointer;
 	border: 0;
 	font-size: 16px;
@@ -91,14 +77,14 @@ nav button{
 
 .get-cv-btn {
 
-	color: #1ee3cf;
+	color: #10eaf0;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 }
 
 .get-cv-btn:hover {
-	color: #6200ea;
+	color: #0028ff;
 }
 
 .burger {
@@ -109,11 +95,12 @@ nav button{
 .burger div{
 	width: 30px;
 	height: 3px;
-	background-color: #6200ea;
+	background-color: #0028ff;
 	margin: 5px;
 	transition: all 0.4s ease;
 
 }
+
 
 #main-project {
 	width: 100%;
@@ -124,15 +111,15 @@ nav button{
 /* PROJECT LIST PAGE */
 
 #project-title a{
-	color: #00dba0;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 300;
+	color: #10eaf0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
 }
 
 .thumb-img {
-	width: 250px;
-	height: 150px;
-	margin: 0 0 15px 0;
+	width: 350px;
+	height: 240px;
 }
 
 .project-list {
@@ -141,122 +128,60 @@ nav button{
 	font-size: 36px;
 	font-family: 'Raleway', cursive;
 	font-weight: 700;
+	margin-top: 5%;
 }
 
-/*
 
-.list-whole{
-	width: 55%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 25px;
-	margin: 50px auto;
-	color: #222;
-}
-
-.list-item{
-	position: relative;
-	background-color: #fafafa;
-	border-radius: 5px;
-}
-
-.list-item h3, .list-item p {
-	padding: 0 15px;
-}
-
-.thumb-img {
+.list-whole {
 	width: 100%;
-	height: 250px;
+	margin: 2% auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 }
 
-.list-item h3 {
-	color: #6200ea;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 900;
-	font-size: 14px;
-}
-
-.list-item p {
-	color: #6200ea;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	font-size: 12px;
-}
-
-
-.project-main {
-	margin-top: 80px;
-}
-
-*/
-
-.list-whole {
-display: grid;
-
-grid-template-columns: 1fr 1fr 1fr 1fr;
-
-grid-template-rows: 1fr 1fr 1fr 1fr;
-
-grid-column-gap: 20px;
-
-grid-row-gap: 20px;
-
-.about-projects { grid-area: 1 / 1 / 4 / 2; }
-
-.list-item { grid-area: 1 / 2 / 2 / 3; }
-
-.list-item { grid-area: 1 / 3 / 2 / 4; }
-
-.list-item{ grid-area: 1 / 4 / 2 / 5; }
-
-.list-item { grid-area: 2 / 2 / 3 / 3; }
-
-.list-item { grid-area: 2 / 3 / 3 / 4; }
-
-}
-
-.list-whole {
-	margin: 50px 50px;
-}
-
-
-/* INDUVIDUAL PROJECT PAGE */
-
-.project-info {
+.list-item {
 	display: flex;
 	flex-direction: row;
-	margin: 50px 150px;
+	width: 65%;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.img-container {
+	margin-right: 60px;
 }
 
-.project-info img {
-	width: 45%;
-	height: 35%;
-}
-
-.project-details {
-	margin-left: 40px;
-	align-content: center;
-}
-
-.project-details h2 {
+.project-info-container p, .techno p {
+	color: #1E1927;
 	font-family: 'Raleway', sans-serif;
-	color: #fff;
-	font-size: 2em;
 	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.4;
 }
 
-.project-details p {
-	font-family: 'Lato', sans-serif;
-	color: #fff;
-	font-size: 1.3em;
-	font-weight: 300;
+.project-date {
+	color: #494453;
 }
 
-.project-details p:last-child {
-	font-family: 'Lato', sans-serif;
-	color: #84ffff;
-	font-size: 1.1em;
-	font-weight: 300;
+.demo-link, .github-link {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #AFA8BA;
+	margin-right: 15px;
+}
+
+.fa-laptop, .fa-github {
+	margin-right: 7px;
+}
+
+.project-info-container p:last-child {
+	font-family: 'Raleway', sans-serif;
+	color: #AFA8BA;
+	font-size: 14px;
+	font-weight: 400;
 }
 
 .code-links {
@@ -265,21 +190,7 @@ grid-row-gap: 20px;
 }
 
 .fa-laptop, .fa-github {
-	margin-right: 15px;
-}
-
-.github-link {
-	margin-left: 50px;
-	font-size: 20px;
-}
-
-.demo-link span, .github-link span {
-	color: #84ffff;  
-}
-
-.demo-link {
-	font-size: 20px;
-
+	margin-right: 7px;
 }
 
 .code-links i{
@@ -292,21 +203,11 @@ grid-row-gap: 20px;
 	padding: 0;
 }
 
-.techno p {
-	font-size: 20px;
-	font-family: 'Lato', sans-serif;
-	color: #fff;
-	font-weight: 300;
-}
-
-.techno p span {
-	color: #84ffff;  
-}
 
 .techno-icons {
 	display: flex;
 	flex-direction: row;
-	color: #fff;
+	color: #494453;
 	list-style: none;
 	padding: 0;
 }
